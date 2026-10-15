@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Creciendo · Tu espacio de bienestar en Villa Constitución</title>
+<meta name="description" content="Yoga, Pilates, estética y bienestar en Villa Constitución desde 2001. Pedí tu turno por WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Sans:wght@400;500;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --violeta:#6b3fa0; --violeta-osc:#3f2463; --lila:#efe7f8; --lila-2:#f7f2fc;
+  --amarillo:#f6b93b; --amarillo-claro:#fff4dc; --salvia:#7f9c7a; --salvia-claro:#e9f0e6;
+  --tinta:#2a2233; --gris:#6c6475; --blanco:#fff; --borde:#e6dcef;
+  --radio:18px; --sombra:0 10px 30px rgba(63,36,99,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',system-ui,sans-serif;color:var(--tinta);background:var(--blanco);line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.contenedor{width:min(1120px,100% - 32px);margin-inline:auto}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.15;color:var(--violeta-osc)}
+h2{font-size:clamp(1.9rem,4vw,2.6rem)}
+.eyebrow{display:inline-block;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;font-weight:700;color:var(--salvia);margin-bottom:.6rem}
+.btn{display:inline-flex;align-items:center;gap:.55rem;padding:.9rem 1.4rem;border-radius:999px;font-weight:700;transition:transform .15s,box-shadow .15s,background .15s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:#25d366;color:#fff;box-shadow:0 8px 20px rgba(37,211,102,.30)}
+.btn-wa:hover{background:#1ebe5b}
+.btn-sec{background:var(--blanco);color:var(--violeta-osc);border:2px solid var(--borde)}
+.btn-sec:hover{border-color:var(--violeta)}
+.btn svg{width:20px;height:20px}
+section{padding:88px 0}
+.cabecera-seccion{max-width:640px;margin-bottom:44px}
+.cabecera-seccion p{color:var(--gris);margin-top:.8rem;font-size:1.05rem}
+
+/* Barra superior */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--borde)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.marca{display:flex;align-items:center;gap:10px}
+.marca svg{width:44px;height:44px}
+.marca-texto{display:flex;flex-direction:column;line-height:1}
+.marca-texto b{font-family:'Dancing Script',cursive;font-size:1.75rem;color:var(--tinta)}
+.marca-texto small{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gris);margin-top:3px}
+.menu{display:flex;gap:28px;font-weight:500;color:var(--gris)}
+.menu a:hover{color:var(--violeta)}
+.nav .btn{padding:.65rem 1.1rem;font-size:.92rem}
+@media (max-width:860px){.menu{display:none}}
+@media (max-width:420px){.nav .btn span{display:none}.nav .btn{padding:.65rem}}
+
+/* Portada */
+.hero{padding:72px 0 96px;background:
+  radial-gradient(900px 500px at 85% 10%,var(--amarillo-claro),transparent 60%),
+  radial-gradient(700px 500px at 0% 100%,var(--lila),transparent 60%),var(--lila-2);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.4rem,5.4vw,4rem);margin-bottom:1.2rem}
+.hero h1 em{font-style:italic;color:var(--violeta)}
+.hero p.lead{font-size:1.15rem;color:var(--gris);max-width:540px;margin-bottom:2rem}
+.acciones{display:flex;flex-wrap:wrap;gap:12px}
+.datos{display:flex;flex-wrap:wrap;gap:28px;margin-top:2.6rem}
+.dato b{display:block;font-family:'Fraunces',serif;font-size:1.9rem;color:var(--violeta-osc);line-height:1}
+.dato span{font-size:.88rem;color:var(--gris)}
+.estrellas{color:var(--amarillo);letter-spacing:2px}
+.hero-visual{position:relative;aspect-ratio:1/1.05;max-width:460px;justify-self:center;width:100%}
+.circulo{position:absolute;border-radius:50%}
+.c2{width:52%;aspect-ratio:1;right:-4%;top:-4%;background:linear-gradient(150deg,var(--amarillo),#f39c4a);opacity:.85}
+.foto-principal{position:absolute;inset:0 10% 8% 0;width:90%;height:92%;object-fit:cover;border-radius:200px 200px 28px 28px;box-shadow:0 30px 60px rgba(63,36,99,.25)}
+.foto-chica{position:absolute;width:42%;aspect-ratio:1;object-fit:cover;right:0;bottom:0;border-radius:50%;border:6px solid #fff;box-shadow:var(--sombra)}
+.etiqueta{position:absolute;background:#fff;border-radius:14px;padding:.7rem 1rem;box-shadow:var(--sombra);font-size:.9rem;font-weight:500;display:flex;align-items:center;gap:.5rem}
+.e1{top:12%;left:-6%}.e2{bottom:34%;left:-8%}
+
+/* Franja de fotos */
+.franja{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:40px}
+.franja button{position:relative;border:0;padding:0;border-radius:var(--radio);overflow:hidden;aspect-ratio:4/3;cursor:pointer;font:inherit}
+.franja img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.franja button:hover img{transform:scale(1.06)}
+.franja span{position:absolute;inset:auto 0 0 0;padding:44px 18px 16px;text-align:left;color:#fff;font-family:'Fraunces',serif;font-size:1.3rem;background:linear-gradient(transparent,rgba(42,22,70,.8))}
+@media (max-width:640px){.franja{grid-template-columns:1fr 1fr}.franja button:first-child{grid-column:1/-1}}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.hero-visual{max-width:340px}.e2{left:0}.e1{right:0}}
+
+/* Servicios */
+.filtros{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px}
+.chip{border:2px solid var(--borde);background:#fff;border-radius:999px;padding:.5rem 1.1rem;font:inherit;font-weight:500;color:var(--gris);cursor:pointer;transition:.15s}
+.chip:hover{border-color:var(--violeta);color:var(--violeta)}
+.chip.activo{background:var(--violeta);border-color:var(--violeta);color:#fff}
+.servicios{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
+.servicio{background:#fff;border:1px solid var(--borde);border-radius:var(--radio);padding:26px;display:flex;flex-direction:column;gap:.7rem;transition:transform .2s,box-shadow .2s}
+.servicio:hover{transform:translateY(-4px);box-shadow:var(--sombra)}
+.servicio .icono{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;font-size:1.5rem}
+.mov .icono{background:var(--lila)}.est .icono{background:var(--amarillo-claro)}.bie .icono{background:var(--salvia-claro)}
+.servicio h3{font-size:1.25rem}
+.servicio p{color:var(--gris);font-size:.95rem;flex:1}
+.servicio .pedir{font-weight:700;color:var(--violeta);display:inline-flex;align-items:center;gap:.4rem;margin-top:.3rem}
+.servicio .pedir:hover{gap:.7rem}
+.servicio[hidden]{display:none}
+
+/* Horarios */
+.horarios{background:var(--lila-2)}
+.tabla-wrap{overflow-x:auto;background:#fff;border-radius:var(--radio);box-shadow:var(--sombra);border:1px solid var(--borde)}
+table{width:100%;border-collapse:collapse;min-width:640px}
+th,td{padding:12px 10px;text-align:center;border-bottom:1px solid var(--borde);font-size:.92rem}
+th{font-family:'Fraunces',serif;color:var(--violeta-osc);font-size:1rem;background:var(--lila-2)}
+td:first-child{font-weight:700;color:var(--gris)}
+.clase{display:inline-block;padding:.3rem .7rem;border-radius:999px;font-weight:500;font-size:.82rem;line-height:1.3}
+.k-yoga{background:#e8dcf6;color:#5a2f8f}
+.k-pilates{background:#e2eedd;color:#3f6339}
+.k-otro{background:var(--amarillo-claro);color:#8a5a00}
+.nota{margin-top:16px;color:var(--gris);font-size:.92rem;display:flex;gap:.5rem;align-items:flex-start}
+
+/* Por qué */
+.porque-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px}
+.porque{padding-left:18px;border-left:3px solid var(--amarillo)}
+.porque h3{font-size:1.15rem;margin-bottom:.4rem}
+.porque p{color:var(--gris);font-size:.96rem}
+.cita{margin-top:56px;background:var(--violeta-osc);color:#fff;border-radius:24px;padding:44px clamp(24px,5vw,56px);font-family:'Fraunces',serif;font-size:clamp(1.3rem,2.6vw,1.8rem);line-height:1.4}
+.cita small{display:block;font-family:'DM Sans',sans-serif;font-size:.9rem;opacity:.75;margin-top:1rem}
+
+/* Opiniones */
+.opiniones{background:linear-gradient(180deg,#fff, var(--salvia-claro))}
+.resumen-google{display:flex;align-items:center;gap:14px;margin-bottom:32px;flex-wrap:wrap}
+.resumen-google b{font-family:'Fraunces',serif;font-size:2.6rem;color:var(--violeta-osc);line-height:1}
+.carrusel{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(280px,1fr);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px}
+.carrusel::-webkit-scrollbar{height:8px}.carrusel::-webkit-scrollbar-thumb{background:var(--borde);border-radius:8px}
+.opinion{scroll-snap-align:start;background:#fff;border-radius:var(--radio);padding:26px;border:1px solid var(--borde);display:flex;flex-direction:column;gap:14px}
+.opinion p{font-size:1rem}
+.autor{display:flex;align-items:center;gap:10px;margin-top:auto;font-weight:700;font-size:.92rem}
+.avatar{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:700}
+
+/* Gift card */
+.gift{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.tarjeta{aspect-ratio:1.6;border-radius:22px;padding:28px;color:#fff;display:flex;flex-direction:column;justify-content:space-between;
+  background:linear-gradient(135deg,#8c5cc4 0%,var(--violeta) 45%,#d0679a 100%);box-shadow:0 24px 50px rgba(107,63,160,.35);transform:rotate(-3deg);max-width:420px;justify-self:center;width:100%}
+.tarjeta .marca-texto b{color:#fff}.tarjeta .marca-texto small{color:rgba(255,255,255,.8)}
+.tarjeta big{font-family:'Fraunces',serif;font-size:1.6rem}
+.lista-check{list-style:none;margin:1.2rem 0 1.8rem;display:grid;gap:.5rem}
+.lista-check li::before{content:"✓";color:var(--salvia);font-weight:700;margin-right:.6rem}
+@media (max-width:860px){.gift{grid-template-columns:1fr}}
+
+/* Contacto */
+.contacto{background:var(--violeta-osc);color:#fff}
+.contacto h2{color:#fff}
+.contacto .eyebrow{color:var(--amarillo)}
+.contacto-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:stretch}
+.datos-contacto{display:grid;gap:20px;align-content:start}
+.fila{display:flex;gap:14px;align-items:flex-start}
+.fila .ico{width:42px;height:42px;flex:none;border-radius:12px;background:rgba(255,255,255,.1);display:grid;place-items:center;font-size:1.15rem}
+.fila b{display:block}.fila span,.fila a{color:rgba(255,255,255,.78)}
+.fila a:hover{color:#fff;text-decoration:underline}
+.redes{display:flex;gap:10px;margin-top:6px}
+.redes a{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.12);display:grid;place-items:center;transition:.15s}
+.redes a:hover{background:var(--amarillo);color:var(--violeta-osc)}
+.redes svg{width:20px;height:20px}
+.mapa{border-radius:var(--radio);overflow:hidden;min-height:340px;border:0;width:100%;height:100%}
+@media (max-width:860px){.contacto-grid{grid-template-columns:1fr}}
+footer{background:#2b1845;color:rgba(255,255,255,.6);text-align:center;padding:26px 16px;font-size:.85rem}
+
+/* Botón flotante */
+.flotante{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 25px rgba(0,0,0,.25);transition:transform .15s}
+.flotante:hover{transform:scale(1.08)}
+.flotante svg{width:32px;height:32px;fill:#fff}
+
+.aparecer{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.aparecer.visible{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.aparecer{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<!-- Flor del logo, reutilizable -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="flor" viewBox="0 0 100 100">
+      <g transform="translate(50 52)">
+        <ellipse rx="9" ry="24" fill="#8e5cc7" transform="rotate(-70) translate(0 -22)"/>
+        <ellipse rx="9" ry="24" fill="#e2559b" transform="rotate(-35) translate(0 -22)"/>
+        <ellipse rx="9" ry="24" fill="#f39c33" transform="rotate(0) translate(0 -22)"/>
+        <ellipse rx="9" ry="24" fill="#f6c838" transform="rotate(35) translate(0 -22)"/>
+        <ellipse rx="9" ry="24" fill="#7dbb57" transform="rotate(70) translate(0 -22)"/>
+        <ellipse rx="9" ry="24" fill="#3fa9d6" transform="rotate(105) translate(0 -22)" opacity=".9"/>
+        <circle r="7" fill="#fff"/>
+      </g>
+    </symbol>
+    <symbol id="wa" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2Zm5.8 14.03c-.24.68-1.41 1.3-1.95 1.38-.5.07-1.13.1-1.82-.12-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.8-4.18-4.94-4.37-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.01-2.41.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.58.82 2.01.89 2.15.07.15.12.32.02.51-.1.19-.14.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.3-.12.59.17.29.75 1.24 1.6 2 1.1.98 2.03 1.28 2.32 1.43.29.14.46.12.63-.07.17-.19.72-.84.92-1.13.19-.29.38-.24.65-.14.26.1 1.68.79 1.97.94.29.14.48.22.55.34.07.12.07.7-.17 1.38Z"/></symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="contenedor nav">
+    <a href="#inicio" class="marca" aria-label="Creciendo, inicio">
+      <svg><use href="#flor"/></svg>
+      <span class="marca-texto"><b>Creciendo</b><small>tu espacio de bienestar</small></span>
+    </a>
+    <nav class="menu">
+      <a href="#servicios">Servicios</a>
+      <a href="#horarios">Horarios</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-wa" data-wa="Hola! Quiero pedir un turno en Creciendo." href="#">
+      <svg fill="currentColor"><use href="#wa"/></svg><span>Pedir turno</span>
+    </a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="contenedor hero-grid">
+    <div>
+      <span class="eyebrow">Villa Constitución · Desde 2001</span>
+      <h1>Movimiento, estética y bienestar, <em>en un solo lugar</em>.</h1>
+      <p class="lead">Reducí la ansiedad, mejorá tu postura, liberá tensiones y trabajá tu fuerza y flexibilidad, mientras disfrutás y te cuidamos.</p>
+      <div class="acciones">
+        <a class="btn btn-wa" data-wa="Hola! Quiero pedir un turno en Creciendo." href="#">
+          <svg fill="currentColor"><use href="#wa"/></svg>Pedir turno por WhatsApp
+        </a>
+        <a class="btn btn-sec" href="#horarios">Ver horarios de clases</a>
+      </div>
+      <div class="datos">
+        <div class="dato"><b>25 años</b><span>cuidando personas</span></div>
+        <div class="dato"><b>4,9 <span class="estrellas">★</span></b><span>58 opiniones en Google</span></div>
+        <div class="dato"><b>+12</b><span>servicios y clases</span></div>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="circulo c2"></div>
+      <img class="foto-principal" src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=900&q=75" alt="">
+      <img class="foto-chica" src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=500&q=70" alt="">
+      <div class="etiqueta e1">🧘 Yoga Integral Terapéutico</div>
+      <div class="etiqueta e2">✨ Cosmiatría y estética</div>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="contenedor">
+    <div class="cabecera-seccion aparecer">
+      <span class="eyebrow">Servicios</span>
+      <h2>Una mirada integral de tu bienestar</h2>
+      <p>El movimiento, la estética y el cuidado personal se complementan. Elegí lo que necesitás y pedí tu turno en un toque.</p>
+    </div>
+    <div class="franja aparecer">
+      <button data-ir="mov"><img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=700&q=70" alt="Clase de yoga"><span>Movimiento</span></button>
+      <button data-ir="est"><img src="https://images.unsplash.com/photo-1552693673-1bf958298935?w=700&q=70" alt="Tratamiento facial"><span>Estética</span></button>
+      <button data-ir="bie"><img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=700&q=70" alt="Masaje relajante"><span>Bienestar corporal</span></button>
+    </div>
+    <div class="filtros" role="tablist">
+      <button class="chip activo" data-filtro="todos">Todos</button>
+      <button class="chip" data-filtro="mov">Movimiento</button>
+      <button class="chip" data-filtro="est">Estética</button>
+      <button class="chip" data-filtro="bie">Bienestar corporal</button>
+    </div>
+    <div class="servicios" id="lista-servicios"></div>
+  </div>
+</section>
+
+<section class="horarios" id="horarios">
+  <div class="contenedor">
+    <div class="cabecera-seccion aparecer">
+      <span class="eyebrow">Clases</span>
+      <h2>Horarios de la semana</h2>
+      <p>Grupos reducidos, con prácticas adaptadas a tus posibilidades. Para mujeres y hombres de todas las edades.</p>
+    </div>
+    <div class="tabla-wrap aparecer">
+      <table>
+        <thead><tr><th>Hora</th><th>Lunes</th><th>Martes</th><th>Miércoles</th><th>Jueves</th><th>Viernes</th></tr></thead>
+        <tbody id="grilla"></tbody>
+      </table>
+    </div>
+    <p class="nota">ℹ️ Los cupos son limitados. Escribinos por WhatsApp para confirmar disponibilidad y reservar tu lugar.</p>
+  </div>
+</section>
+
+<section id="nosotros">
+  <div class="contenedor">
+    <div class="cabecera-seccion aparecer">
+      <span class="eyebrow">Por qué Creciendo</span>
+      <h2>Atención personalizada, sin soluciones mágicas</h2>
+    </div>
+    <div class="porque-grid">
+      <div class="porque aparecer"><h3>Escuchamos primero</h3><p>Nuestra esencia es escuchar, comprender y respetar las necesidades de cada persona.</p></div>
+      <div class="porque aparecer"><h3>Mirada interdisciplinaria</h3><p>Profesionales con formación continua que trabajan juntos, porque cada persona es única.</p></div>
+      <div class="porque aparecer"><h3>Movimiento seguro</h3><p>Ideal para retomar la actividad después de una rehabilitación o con indicación médica.</p></div>
+      <div class="porque aparecer"><h3>Espacio protegido</h3><p>Contamos con servicio de Área Protegida para que entrenes y te relajes con tranquilidad.</p></div>
+    </div>
+    <div class="cita aparecer">“En tiempos que cambian, seguimos eligiendo cuidar personas.”<small>Creciendo, tu espacio de bienestar · desde 2001</small></div>
+  </div>
+</section>
+
+<section class="opiniones" id="opiniones">
+  <div class="contenedor">
+    <div class="cabecera-seccion aparecer">
+      <span class="eyebrow">Opiniones</span>
+      <h2>Lo que dicen quienes ya vienen</h2>
+    </div>
+    <div class="resumen-google aparecer">
+      <b>4,9</b>
+      <div><div class="estrellas" style="font-size:1.3rem">★★★★★</div><span style="color:var(--gris)">58 opiniones en Google Maps</span></div>
+    </div>
+    <div class="carrusel" id="carrusel"></div>
+  </div>
+</section>
+
+<section id="regalos">
+  <div class="contenedor gift">
+    <div class="tarjeta aparecer" aria-hidden="true">
+      <span class="marca-texto"><b>Creciendo</b><small>tu espacio de bienestar</small></span>
+      <div><small style="opacity:.8;letter-spacing:.15em;text-transform:uppercase;font-size:.75rem">Gift Card</small><br><big>Regalá bienestar</big></div>
+    </div>
+    <div class="aparecer">
+      <span class="eyebrow">Gift Cards</span>
+      <h2>Un regalo que se siente</h2>
+      <p style="color:var(--gris);margin-top:.8rem">Armamos una Gift Card personalizada combinando nuestros servicios. Ideal para cumpleaños, el Día de la Madre o simplemente para decir “te quiero”.</p>
+      <ul class="lista-check">
+        <li>Masajes y tratamientos faciales y corporales</li>
+        <li>Clases de Yoga y Pilates</li>
+        <li>Productos para el cuidado de la piel en casa</li>
+      </ul>
+      <a class="btn btn-wa" data-wa="Hola! Quiero armar una Gift Card de Creciendo." href="#"><svg fill="currentColor"><use href="#wa"/></svg>Armar mi Gift Card</a>
+    </div>
+  </div>
+</section>
+
+<section class="contacto" id="contacto">
+  <div class="contenedor contacto-grid">
+    <div class="datos-contacto">
+      <div><span class="eyebrow">Contacto</span><h2>Te esperamos</h2></div>
+      <div class="fila"><div class="ico">📍</div><div><b>Dirección</b><span>Av. San Martín 1917, Villa Constitución, Santa Fe</span></div></div>
+      <div class="fila"><div class="ico">🕒</div><div><b>Horario</b><span>Lunes a viernes de 7 a 21 h · Sábados de 8 a 12 h<br>Atención con turno previo</span></div></div>
+      <div class="fila"><div class="ico">📱</div><div><b>WhatsApp</b><a data-wa="Hola! Quería hacer una consulta." href="#">3400 65-7816</a></div></div>
+      <div class="fila"><div class="ico">✉️</div><div><b>Mail</b><a href="mailto:creciendo1917@hotmail.com">creciendo1917@hotmail.com</a></div></div>
+      <div class="redes">
+        <a href="https://www.instagram.com/creciendotuespacio/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="https://www.facebook.com/Creciendotuespaciodebienestar/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-4 1.7-4 4.2V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.3-.6.6-.6Z"/></svg></a>
+        <a data-wa="Hola! Quería hacer una consulta." href="#" aria-label="WhatsApp"><svg fill="currentColor"><use href="#wa"/></svg></a>
+      </div>
+    </div>
+    <iframe class="mapa" title="Ubicación de Creciendo" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=Creciendo+Tu+Espacio+de+Bienestar,+Av.+San+Mart%C3%ADn+1917,+Villa+Constituci%C3%B3n&output=embed"></iframe>
+  </div>
+</section>
+</main>
+
+<footer>© Creciendo, tu espacio de bienestar · Villa Constitución, Santa Fe</footer>
+
+<a class="flotante" data-wa="Hola! Quiero pedir un turno en Creciendo." href="#" aria-label="Escribinos por WhatsApp"><svg><use href="#wa"/></svg></a>
+
+<script>
+const TEL = '5493400657816';
+const wa = msg => `https://wa.me/${TEL}?text=${encodeURIComponent(msg)}`;
+
+const servicios = [
+  ['mov','🧘','Yoga Integral Terapéutico','Posturas, respiración consciente y relajación para ganar flexibilidad, equilibrio y calma.'],
+  ['mov','🌿','Pilates Postural','Fortalecé tu musculatura, mejorá la estabilidad y la postura con movimiento consciente.'],
+  ['mov','💪','Entrenamiento terapéutico','Para retomar la actividad después de una lesión o con indicación médica, a tu ritmo.'],
+  ['mov','❤️','Cardio y RFC','Clases para mejorar tu resistencia y tu capacidad física, acompañado por profesionales.'],
+  ['est','✨','Cosmiatría funcional','Tratamientos faciales personalizados para cada tipo de piel y cada etapa.'],
+  ['est','💉','Dermapen','Recuperá la firmeza de tu rostro y mejorá la textura de la piel.'],
+  ['est','🌸','Longevidad cutánea','Un enfoque funcional para acompañar y cuidar la piel madura.'],
+  ['est','❄️','Depilación láser definitiva','Sesiones seguras, con evaluación previa y protección en cada sesión.'],
+  ['est','🍑','Tratamiento de celulitis','Masajes, drenaje y tecnología estética combinados en un plan para vos.'],
+  ['bie','💆','Masajes','Relajantes y descontracturantes para liberar tensiones y dolores musculares.'],
+  ['bie','💧','Drenaje linfático','Mejorá la circulación y sentí tu cuerpo más liviano.'],
+  ['bie','🦶','Reflexología y biomagnetismo','Técnicas complementarias para recuperar el equilibrio y regalarle una pausa a tu cuerpo.'],
+];
+const lista = document.getElementById('lista-servicios');
+lista.innerHTML = servicios.map(([g,ic,t,d]) => `
+  <article class="servicio ${g} aparecer" data-grupo="${g}">
+    <div class="icono">${ic}</div><h3>${t}</h3><p>${d}</p>
+    <a class="pedir" href="${wa(`Hola! Quiero consultar por ${t}.`)}" target="_blank" rel="noopener">Consultar turno →</a>
+  </article>`).join('');
+
+const filtrar = f => {
+  document.querySelectorAll('.chip').forEach(c => c.classList.toggle('activo', c.dataset.filtro === f));
+  lista.querySelectorAll('.servicio').forEach(s => s.hidden = f !== 'todos' && s.dataset.grupo !== f);
+};
+document.querySelectorAll('.chip').forEach(ch => ch.addEventListener('click', () => filtrar(ch.dataset.filtro)));
+document.querySelectorAll('.franja button').forEach(b => b.addEventListener('click', () => {
+  filtrar(b.dataset.ir);
+  document.querySelector('.filtros').scrollIntoView({behavior:'smooth', block:'start'});
+}));
+
+const grilla = [
+  ['08:00',['Yoga'],['Pilates'],['Yoga'],['Pilates'],[]],
+  ['13:30',['Pilates'],[],['Pilates'],[],['Pilates']],
+  ['14:30',['Pilates'],['Yoga'],['Pilates'],['Yoga'],[]],
+  ['16:00',[],['Entrenamiento terapéutico'],[],['Entrenamiento terapéutico'],[]],
+  ['16:30',[],[],['RFC'],[],['RFC']],
+  ['18:30',['Pilates','Cardio'],['Yoga taller'],['Pilates','Cardio'],['Yoga taller'],[]],
+  ['19:00',[],['Pilates'],[],['Pilates'],[]],
+  ['19:30',['Yoga'],[],['Yoga'],[],[]],
+  ['20:00',[],['Pilates'],[],['Pilates'],[]],
+];
+const clase = c => `<span class="clase ${/yoga/i.test(c)?'k-yoga':/pilates/i.test(c)?'k-pilates':'k-otro'}">${c}</span>`;
+document.getElementById('grilla').innerHTML = grilla.map(([h,...dias]) =>
+  `<tr><td>${h}</td>${dias.map(d => `<td>${d.map(clase).join('<br>')}</td>`).join('')}</tr>`).join('');
+
+const opiniones = [
+  ['Carmela M.','Es un espacio especial para sentirte mimada. Donde cuidan tu bienestar interior y tu belleza exterior. ¡Altamente recomendable!','#8e5cc7'],
+  ['Lucía V.','Mi experiencia en este lugar me cambió en cuerpo y alma. Hace más de 2 años que estoy en Creciendo y no pienso irme.','#e2559b'],
+  ['Ziomara G.','Hice 3 sesiones de depilación definitiva y fue un éxito. Muy profesionales: me preguntaron un montón de cosas antes de la primera sesión.','#f39c33'],
+  ['Paola B.','Siempre placentero. Siempre la mejor atención y profesionalidad. Creciendo es bienestar y calidez.','#7dbb57'],
+  ['Leila M.','¡El mejor lugar! Atención de 10. Las chicas muy atentas y la depilación láser un espectáculo.','#3fa9d6'],
+  ['María Cristina F.','Creciendo es el lugar donde encontré comodidad, compañerismo y muy buena atención. Este es mi espacio.','#6b3fa0'],
+  ['Ramiro D.','Excelente atención y resultados del tratamiento. Muy conforme.','#7f9c7a'],
+];
+document.getElementById('carrusel').innerHTML = opiniones.map(([n,t,c]) => `
+  <figure class="opinion"><div class="estrellas">★★★★★</div><p>“${t}”</p>
+  <figcaption class="autor"><span class="avatar" style="background:${c}">${n[0]}</span>${n}</figcaption></figure>`).join('');
+
+document.querySelectorAll('[data-wa]').forEach(a => { a.href = wa(a.dataset.wa); a.target = '_blank'; a.rel = 'noopener'; });
+
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } }), {threshold:.12});
+document.querySelectorAll('.aparecer').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
