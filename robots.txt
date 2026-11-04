@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://creciendobienestar.com.ar/sitemap.xml

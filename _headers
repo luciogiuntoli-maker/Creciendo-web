@@ -1,0 +1,6 @@
+# Las direcciones de prueba de Cloudflare no aparecen en Google; solo el dominio propio
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex
