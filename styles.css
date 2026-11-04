@@ -11,8 +11,9 @@ body{font-family:var(--sans);font-weight:300;color:var(--tinta);background:var(-
 img,svg{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 .contenedor{width:min(1160px,100% - 32px);margin-inline:auto}
-h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.12;color:var(--ciruela-osc);letter-spacing:.005em}
-h1{font-size:clamp(2.6rem,6vw,4.6rem)}
+h1,h2,h3,.titular{font-family:var(--serif);font-weight:500;line-height:1.12;color:var(--ciruela-osc);letter-spacing:.005em}
+h1,.titular{font-size:clamp(2.6rem,6vw,4.6rem)}
+h1.antetitulo{font-family:var(--sans);font-size:.74rem;font-weight:400;line-height:1.5;letter-spacing:.28em;color:var(--dorado)}
 h2{font-size:clamp(2.1rem,4.4vw,3.2rem)}
 h3{font-size:clamp(1.6rem,2.6vw,2rem)}
 p+p{margin-top:1em}
@@ -62,7 +63,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(250,247,242,.94);backdro
 /* Portada */
 .portada{padding:clamp(56px,8vw,96px) 0 clamp(72px,10vw,120px)}
 .portada-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(40px,6vw,80px);align-items:center}
-.portada h1 em{font-style:italic;color:var(--ciruela)}
+.portada .titular em{font-style:italic;color:var(--ciruela)}
 .portada .texto p{font-size:1.08rem;color:var(--gris);max-width:540px}
 .portada .texto p:first-of-type{font-family:var(--serif);font-size:clamp(1.3rem,2.2vw,1.55rem);color:var(--tinta);line-height:1.5;margin-top:1.6rem}
 .acciones{display:flex;flex-wrap:wrap;gap:14px;margin-top:2.4rem}
