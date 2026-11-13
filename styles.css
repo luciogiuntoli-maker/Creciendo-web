@@ -68,8 +68,8 @@ header{position:sticky;top:0;z-index:50;background:rgba(250,247,242,.94);backdro
 .portada .texto p:first-of-type{font-family:var(--serif);font-size:clamp(1.3rem,2.2vw,1.55rem);color:var(--tinta);line-height:1.5;margin-top:1.6rem}
 .acciones{display:flex;flex-wrap:wrap;gap:14px;margin-top:2.4rem}
 .portada-foto{position:relative;max-width:440px;width:100%;justify-self:center}
-.portada-foto img{width:100%;height:auto;border-radius:240px 240px 0 0}
-.portada-foto::before{content:"";position:absolute;inset:-18px 18px 18px -18px;border:1px solid var(--dorado);border-radius:240px 240px 0 0;z-index:-1}
+.portada-foto img{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:240px 240px 0 0}
+.portada-foto::before{content:"";position:absolute;inset:-14px;border:1px solid var(--dorado);border-radius:260px 260px 0 0;z-index:-1}
 .datos{display:flex;flex-wrap:wrap;gap:clamp(24px,4vw,48px);margin-top:3rem;padding-top:2rem;border-top:1px solid var(--linea)}
 .dato b{display:block;font-family:var(--serif);font-weight:500;font-size:2.2rem;color:var(--ciruela-osc);line-height:1}
 .dato span{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gris)}
@@ -125,10 +125,10 @@ header{position:sticky;top:0;z-index:50;background:rgba(250,247,242,.94);backdro
 /* Gift card */
 .regalo{background:var(--arena)}
 .regalo-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,80px);align-items:center}
-.tarjeta{aspect-ratio:1.6;max-width:440px;width:100%;justify-self:center;background:var(--ciruela-osc);color:#fff;padding:32px;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;outline:1px solid var(--dorado);outline-offset:-12px}
-.tarjeta .logo-chico{width:170px;background:var(--marfil);padding:8px 12px;box-sizing:content-box}
-.tarjeta em{font-family:var(--serif);font-size:1.7rem}
-.tarjeta small.tipo{font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:#d7bd8f;display:block;margin-bottom:.3rem}
+.tarjeta{aspect-ratio:1.6;max-width:440px;width:100%;justify-self:center;background:var(--blanco);color:var(--ciruela);box-shadow:0 18px 40px rgba(45,31,56,.12);padding:32px;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;outline:1px solid var(--dorado);outline-offset:-12px}
+.tarjeta .logo-chico{width:190px}
+.tarjeta em{font-family:var(--serif);font-size:1.7rem;color:var(--ciruela)}
+.tarjeta small.tipo{font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--ciruela);font-weight:500;display:block;margin-bottom:.3rem}
 .regalo p{color:var(--gris)}
 .regalo .btn{margin-top:2rem}
 @media (max-width:860px){.regalo-grid{grid-template-columns:1fr}}
